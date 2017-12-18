@@ -7,7 +7,7 @@ This is fork of the official [postgres:alpine](https://hub.docker.com/_/postgres
 
 ```bash
 docker build -t postgres-remote-initdb .
-docker run --rm -it -p 55432:5432  \
+docker run --rm -it -p 5432:5432  \
     -e SRC_URL="http://sql.service.consul/dump" \
     -e ON_ERROR_STOP=0 \
     -e POSTGRES_PASSWORD=aaa \
